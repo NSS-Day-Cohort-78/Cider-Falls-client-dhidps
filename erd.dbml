@@ -8,8 +8,8 @@ Table Guests {
 Table ParkAreas {
     id int [pk]
     title varchar
-    guestId array [ref: > Guests.id]
-    serviceId array [ref: <> Services.id] 
+    guestId int [ref: > Guests.id, note: 'Array']
+    serviceId int [ref: <> Services.id, note: 'Array' ] 
 }
 
 Table Services {
