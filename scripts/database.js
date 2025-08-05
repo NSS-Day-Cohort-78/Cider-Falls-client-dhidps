@@ -109,115 +109,115 @@ const database = {
             id: 1,
             firstName: "Paul",
             lastName: "McCartney",
-            parkAreaId: 1
+            parkAreaId: 3
         },
         {
             id: 2,
             firstName: "Sarah",
             lastName: "Johnson",
-            parkAreaId: 7
+            parkAreaId: 1
         },
         {
             id: 3,
             firstName: "Michael",
             lastName: "Chen",
-            parkAreaId: 12
+            parkAreaId: 5
         },
         {
             id: 4,
             firstName: "Emma",
             lastName: "Rodriguez",
-            parkAreaId: 3
+            parkAreaId: 2
         },
         {
             id: 5,
             firstName: "David",
             lastName: "Thompson",
-            parkAreaId: 15
+            parkAreaId: 4
         },
         {
             id: 6,
             firstName: "Jessica",
             lastName: "Williams",
-            parkAreaId: 9
+            parkAreaId: 6
         },
         {
             id: 7,
             firstName: "Ryan",
             lastName: "Anderson",
-            parkAreaId: 4
+            parkAreaId: 1
         },
         {
             id: 8,
             firstName: "Amanda",
             lastName: "Davis",
-            parkAreaId: 11
+            parkAreaId: 3
         },
         {
             id: 9,
             firstName: "Kevin",
             lastName: "Miller",
-            parkAreaId: 6
+            parkAreaId: 2
         },
         {
             id: 10,
             firstName: "Lisa",
             lastName: "Garcia",
-            parkAreaId: 14
+            parkAreaId: 5
         },
         {
             id: 11,
             firstName: "Christopher",
             lastName: "Brown",
-            parkAreaId: 2
+            parkAreaId: 4
         },
         {
             id: 12,
             firstName: "Rachel",
             lastName: "Wilson",
-            parkAreaId: 8
+            parkAreaId: 6
         },
         {
             id: 13,
             firstName: "Brandon",
             lastName: "Martinez",
-            parkAreaId: 13
+            parkAreaId: 1
         },
         {
             id: 14,
             firstName: "Nicole",
             lastName: "Taylor",
-            parkAreaId: 5
+            parkAreaId: 3
         },
         {
             id: 15,
             firstName: "Justin",
             lastName: "Moore",
-            parkAreaId: 10
+            parkAreaId: 2
         },
         {
             id: 16,
             firstName: "Stephanie",
             lastName: "Lee",
-            parkAreaId: 16
+            parkAreaId: 5
         },
         {
             id: 17,
             firstName: "Matthew",
             lastName: "Jackson",
-            parkAreaId: 1
+            parkAreaId: 4
         },
         {
             id: 18,
             firstName: "Lauren",
             lastName: "White",
-            parkAreaId: 7
+            parkAreaId: 6
         },
         {
             id: 19,
             firstName: "Anthony",
             lastName: "Harris",
-            parkAreaId: 9
+            parkAreaId: 1
         },
         {
             id: 20,
@@ -229,5 +229,14 @@ const database = {
 }
 
 // export deep copy of park areas
+export const parkAreasData = () => {
+    return structuredClone(database.parkAreas);
+}
 // export deep copy of services
+export const servicesData = () => {
+    return structuredClone(database.services);
+}
 // export deep copy of guests
+export const guestsData = () => {
+    return structuredClone(database.guests);
+}
