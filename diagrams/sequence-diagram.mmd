@@ -1,0 +1,49 @@
+sequenceDiagram
+
+Main ->> ParkAreas: give me park area HTML
+
+ParkAreas ->> Database: give me park area data
+
+Database -->> ParkAreas: ok
+
+Loop
+
+    Note over ParkAreas: loops park area data
+
+    ParkAreas ->> Services: Give me matching services for park
+
+    Services ->> Database: give me services data
+
+    Database -->> Services: ok
+
+        loop
+            Note over Services: loop over services to find<br> matches and generate html
+        end
+    
+    Services -->> ParkAreas: here is services html
+
+    Note over ParkAreas: Generate HTML
+
+End
+
+ParkAreas -->> Main: Here is the HTML for ParkAreas
+
+Main ->> Guests: give me Guests HTML
+
+Guests ->> Database: give me guests data
+
+Database --> Guests: ok
+
+loop
+
+    Note over Guests: loops over guests and lists<br> them out if they are at a park
+    
+end
+
+Guests -->> Main: here is the guest html
+
+Main ->> Contact: give me contact HTML
+
+Contact -->> Main: ok
+
+Note over Main: Render HTML 
