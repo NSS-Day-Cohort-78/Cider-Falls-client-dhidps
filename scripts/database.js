@@ -5,19 +5,19 @@ const database = {
             id: 1,
             title: "Chamfort River",
             guestId: [],
-            serviceId: []
+            serviceId: [1, 2, 3]
         },
         {
             id: 2,
             title: "Lost Wolf Hiking Trail",
             guestId: [],
-            serviceId: []
+            serviceId: [4, 5, 6]
         },
         {
             id: 3,
             title: "Lodge",
             guestId: [],
-            serviceId: []
+            serviceId: [7, 8, ]
         },
         {
             id: 4,
