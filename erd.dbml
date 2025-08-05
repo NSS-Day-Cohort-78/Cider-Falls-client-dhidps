@@ -1,0 +1,18 @@
+Table Guests {
+    id int [pk]
+    firstName varchar
+    lastName varchar
+    parkAreaId int [ref: > ParkAreas.id]
+}
+
+Table ParkAreas {
+    id int [pk]
+    title varchar
+    guestId int [ref: > Guests.id, note: 'Array']
+    serviceId int [ref: <> Services.id, note: 'Array' ] 
+}
+
+Table Services {
+    id int [pk]
+    attraction varchar
+}
