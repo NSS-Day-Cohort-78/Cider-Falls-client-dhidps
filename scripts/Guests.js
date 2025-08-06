@@ -8,7 +8,7 @@ export const guests = () => {
     
     let guestsHTML = "<ul>";
         for (const guest of guestDataCopy) {
-            guestsHTML += `<li>${guest.firstName}, ${guest.lastName}</li>`
+            guestsHTML += `<li>${guest.firstName} ${guest.lastName}</li>`
             
         }
         guestsHTML += "</ul>"
