@@ -15,7 +15,7 @@ export const parkAreas = () => {
 		services(serviceArr)
 
 		html += `
-        <article class=''>
+        <article class='park'>
             <h2>${park.title}</h2>
             ${services}
         </article>
