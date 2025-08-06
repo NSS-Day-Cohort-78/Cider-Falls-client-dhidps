@@ -6,13 +6,19 @@ export services = (serviceArray) => {
     // call copy of services array and store in variable
     const services = servicesData()
     // servicesHTML variable
-    const servicesHTML = "<ul>"
+    let servicesHTML = "<ul class='services'>"
     // loops services from database.js
     for (const service of services) {
         // loop over serviceArray
-            for (const )
+            for (const serviceItem of serviceArray) {
             // if service id === item in serviceArray
+                if (service.id === serviceItem) {
                 // write HTML and add to servicesHTML
+                 servicesHTML += `<li>${service.attraction}</li>`
+                }
+                }
         }
+        servicesHTML += "</ul>"
     // return services HTML
+    return servicesHTML
 }
