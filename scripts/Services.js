@@ -2,7 +2,7 @@
 import { servicesData } from "./database.js";
 
 //export services function which accepts serviceArray parameter
-export services = (serviceArray) => {
+export const services = (serviceArray) => {
     // call copy of services array and store in variable
     const services = servicesData()
     // servicesHTML variable
