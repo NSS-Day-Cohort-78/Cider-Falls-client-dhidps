@@ -5,23 +5,23 @@ import { services } from "./Services.js"
 
 //export parkAreas function
 export const parkAreas = () => {
-    const parks = parkAreasData()
+	const parks = parkAreasData()
 
-    let html = ""
+	let html = ""
 
-    for (const park of parks) {
-        const serviceArr = park.serviceId
+	for (const park of parks) {
+		const serviceArr = park.serviceId
 
-        services(serviceArr)
+		services(serviceArr)
 
-        html += `
+		html += `
         <article class=''>
             <h2>${park.title}</h2>
             ${services}
         </article>
         `
-    }
-    return html
+	}
+	return html
 }
 // call copy of park areas array and store in variable
 // parkAreaHTML
