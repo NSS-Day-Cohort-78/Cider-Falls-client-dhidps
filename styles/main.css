@@ -41,7 +41,6 @@ header h1 {
 .content-section {
   display: flex;
   gap: 2rem;
-  margin-top: -40rem;
 }
 footer {
   text-align: center;
@@ -71,6 +70,16 @@ li {
 ul {
   gap: 2rem;
   margin: 1rem 0 0 0;
+}
+.park-services-section {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  justify-content: center;
+  margin: -25rem;
+}
+.park-services-section p {
+  width: 40rem;
 }
 /*    display: grid
 

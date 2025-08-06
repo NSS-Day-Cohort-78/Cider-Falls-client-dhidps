@@ -1,19 +1,19 @@
 // import ParkAreas.js
-import { parkAreas } from "./ParkAreas.js"
+import { parkAreas } from "./ParkAreas.js";
 // import Guests.js
-import { guests } from "./Guests.js"
+import { guests } from "./Guests.js";
 // import Contact.js
-import { contact } from "./Contact.js"
+import { contact } from "./Contact.js";
 // import servicesList from services.js
-import { servicesList } from "./Services.js"
+import { servicesList } from "./Services.js";
 
 // get element from DOM to put HTML into
-const container = document.getElementById("container")
+const container = document.getElementById("container");
 
-const parkAreasHTML = parkAreas()
-const guestsHTML = guests()
-const contactHTML = contact()
-const servicesHTML = servicesList()
+const parkAreasHTML = parkAreas();
+const guestsHTML = guests();
+const contactHTML = contact();
+const servicesHTML = servicesList();
 
 let html = `
 <header>
@@ -23,7 +23,7 @@ let html = `
 
 <section class='park-services-section'>
     ${servicesHTML}
-</services>
+</section>
 
 <section class='content-section'>
 <section class='park-area-section'>
@@ -38,6 +38,6 @@ let html = `
 <footer>
     ${contactHTML}
 </footer>
-`
+`;
 
-container.innerHTML = html
+container.innerHTML = html;
