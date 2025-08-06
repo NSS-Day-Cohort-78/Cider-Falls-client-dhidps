@@ -53,7 +53,10 @@ const eventHandler = event => {
     const parkAreas = parkAreasData()
     if (itemClicked.dataset.type === "service") {
         const serviceId = parseInt(itemClicked.dataset.id)
-            let alert = `${itemClicked.dataset.name} is available in `
+        const firstLetterCap = itemClicked.dataset.name.charAt(0).toUpperCase()
+        const lowerCaseName = itemClicked.dataset.name.slice(1)
+        const fullName = firstLetterCap + lowerCaseName
+            let alert = `${fullName} is available in `
             const alertArray = []
                 for (const parkArea of parkAreas) {
                     const serviceIdArr = parkArea.serviceId
