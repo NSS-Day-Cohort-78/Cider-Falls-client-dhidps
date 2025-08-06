@@ -17,6 +17,31 @@ h1 {
   font-size: 6rem;
 }
 .park-area-section {
-  display: flex;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(3, 1fr);
   align-items: flex-start;
+  justify-content: space-between;
+  padding: 2rem;
+  max-width: 75%;
 }
+.guests-section {
+  flex: 1;
+}
+/*    display: grid
+
+    justify-content: space-between;
+    padding: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1.5rem;
+    */
+
+/*
+#container {
+    display: flex;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    padding: 2rem;
+}
+*/

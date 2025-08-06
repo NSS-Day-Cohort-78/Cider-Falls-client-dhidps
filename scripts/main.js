@@ -25,12 +25,14 @@ let html = `
     ${servicesHTML}
 </services>
 
+<section class='content-section'>
 <section class='park-area-section'>
     ${parkAreasHTML}
 </section>
 
 <section class='guests-section'>
     ${guestsHTML}
+</section>
 </section>
 
 <footer>
