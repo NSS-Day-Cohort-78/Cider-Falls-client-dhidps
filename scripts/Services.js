@@ -4,11 +4,11 @@ import { servicesData } from "./database.js";
 //export services function which accepts serviceArray parameter
 export const services = (serviceArray) => {
     // call copy of services array and store in variable
-    const services = servicesData()
+    const servicesDataArray = servicesData()
     // servicesHTML variable
     let servicesHTML = "<ul class='services'>"
     // loops services from database.js
-    for (const service of services) {
+    for (const service of servicesDataArray) {
         // loop over serviceArray
             for (const serviceItem of serviceArray) {
             // if service id === item in serviceArray
