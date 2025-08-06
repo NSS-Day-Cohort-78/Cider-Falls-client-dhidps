@@ -14,6 +14,7 @@ const contactHTML = contact()
 
 let html = `
 <header>
+    <img src="https://images.macrumors.com/article-new/2023/08/national_parks_2023_1.png?noresize" alt="Cider Falls logo">
     <h1>Cider Falls Park</h1>
 </header>
 
