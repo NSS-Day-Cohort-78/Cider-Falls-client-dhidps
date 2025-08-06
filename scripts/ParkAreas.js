@@ -6,18 +6,20 @@ import { services } from "./Services.js"
 //export parkAreas function
 export const parkAreas = () => {
 	const parks = parkAreasData()
+    
 
 	let html = ""
 
 	for (const park of parks) {
 		const serviceArr = park.serviceId
+        const serviceItem = services(serviceArr)
 
-		services(serviceArr)
+		// services(serviceArr)
 
 		html += `
         <article class='park'>
             <h2>${park.title}</h2>
-            ${services}
+            ${serviceItem}
         </article>
         `
 	}
