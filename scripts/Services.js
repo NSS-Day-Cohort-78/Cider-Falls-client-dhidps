@@ -25,3 +25,23 @@ export const services = serviceArray => {
 	// return services HTML
 	return servicesHTML
 }
+
+// create function to display list of each attraction
+export const servicesList = () => {
+    // store serviceData in variable
+    const services = servicesData()
+    let serviceAttractionArr = []
+    let eachServiceHTML = "<p class='park-services'>Park services: "
+    // iterate each service 
+    for (const service of services) {
+        serviceAttractionArr.push(service.attraction)
+        }
+        // add each service attraction name to HTML
+        const serviceAttractions = serviceAttractionArr.join(", ")
+        eachServiceHTML += `${serviceAttractions}</p>`
+        return eachServiceHTML
+}
+
+// define event listener with click and click event as arguments
+    // define click event target
+    // 
