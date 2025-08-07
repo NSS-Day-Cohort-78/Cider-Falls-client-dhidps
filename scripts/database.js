@@ -10,7 +10,7 @@ const database = {
 		{
 			id: 2,
 			title: "Lost Wolf Hiking Trail",
-			guestId: [4, 9, 15],
+			guestId: [4, 9, 14],
 			serviceId: [4, 5, 6]
 		},
 		{
@@ -28,14 +28,14 @@ const database = {
 		{
 			id: 5,
 			title: "Campgrounds",
-			guestId: [3, 10, 16],
+			guestId: [3, 10, 15],
 			serviceId: [12, 13, 11, 5]
 		},
 		{
 			id: 6,
 			title: "Pine Bluffs Trails",
 			guestId: [6, 12, 18],
-			serviceId: [14, 4, 15, 5, 16]
+			serviceId: [4, 14, 5, 15]
 		}
 	],
 	services: [
@@ -93,14 +93,10 @@ const database = {
 		},
 		{
 			id: 14,
-			attraction: "vast network of trails for all levels of hikers"
-		},
-		{
-			id: 15,
 			attraction: "food vendors"
 		},
 		{
-			id: 16,
+			id: 15,
 			attraction: "zip lines"
 		}
 	],
